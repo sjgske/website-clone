@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+body {
+  color: #19191B;
+  width: 1440px;
+  height: 3511px;
+}
+
 /* Reset CSS */
 
 a {
@@ -28,7 +34,7 @@ p {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: -0.6252632141113281px;
+  letter-spacing: -0.0315em;
 }
 
 .fill-button {
@@ -50,4 +56,131 @@ p {
 
 .fill-button.purple {
   background-color: #5854d4;
+}
+
+.button-group {
+  display: flex;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 30px 185px 0; 
+  margin-bottom: 100px;
+}
+
+.logo-image {
+  width: 200px;
+  height: 32px;
+  margin-right: 173px;
+}
+
+.menu-group {
+  display: flex;
+  height: 20px;
+  margin-right: auto;
+}
+
+.menu-group li {
+  margin-right: 50px;
+}
+
+.menu-group li:last-child {
+  margin-right: 0;
+}
+
+.menu-group li a {
+  padding-bottom: 10px;
+  font-family: 'DM sans';
+  font-size: 15px;
+  line-height: 1.172;
+  letter-spacing: -0.03133333333em;
+  transition: border-bottom;
+}
+
+.menu-group li a:hover {
+  border-bottom: 2px solid #19191B;
+}
+
+.fill-button.orange {
+  margin-right: 0;
+}
+
+/* Main */
+.main {
+  display: flex;
+  align-items: center;
+  padding: 0 110px 0 185px;
+  margin-bottom: 100px;
+}
+
+.main-text {
+  margin-right: 77px;
+}
+
+.main-title {
+  margin-bottom: 30px;
+  font-family: 'DM Sans';
+  font-size: 80px;
+  line-height: 1.038961038961039;
+  letter-spacing: -0.031263166666em;
+}
+
+.main-desc {
+  margin-bottom: 50px;
+}
+
+.main-image {
+  width: 610px;
+  height: 644px;
+}
+
+.fill-button.purple {
+  margin-right: 40px;
+}
+
+.down-button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #E7E7E7;
+  border-radius: 50%;
+  background-image: url(assets/arrow-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* Logo groups */
+.logo-groups {
+  display: flex;
+  padding: 0 186px;
+  margin-bottom: 150px;
+}
+
+.logo-groups a {
+  margin-right: 120px;
+}
+
+.logo-groups a:last-child {
+  margin-right: 0;
+}
+
+/* Articles */
+.article {
+  display: flex;
+  align-items: center;
+  padding: 0 186px;
+}
+
+.subscription.article img {
+  margin-right: 165px;
+}
+
+.metrics.article img {
+  order: 2;
+}
+
+.metrics.article div {
+  order: 1;
 }
