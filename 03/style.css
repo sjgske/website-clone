@@ -50,6 +50,11 @@ p {
   line-height: 1.171764705882353;
   letter-spacing: -0.53px;
   text-align: center;
+  transition: opacity 200ms ease-in;
+}
+
+.fill-button:hover {
+  opacity: 0.5;
 }
 
 .fill-button.orange {
@@ -98,11 +103,11 @@ p {
   line-height: 1.172;
   letter-spacing: -0.03133333333em;
   color: #696871;
-  transition: border-bottom;
+  transition: border-bottom 100ms ease;
 }
 
 .menu-group li a:hover {
-  border-bottom: 2px solid #19191B;
+  border-bottom: 2px solid #696871;
 }
 
 .fill-button.orange {
@@ -150,6 +155,11 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: background-color 250ms ease-in;
+}
+
+.down-button:hover {
+  background-color: #F8F8F8;
 }
 
 /* Logo groups */
@@ -284,17 +294,31 @@ p {
 .switch-button {
   width: 165px;
   padding: 0;
+  border: 2px solid #F7F7FB;
   background-color: #F7F7FB;
   font-family: 'DM Sans';
   font-size: 16px;
   font-weight: 700;
   line-height: 1.1875;
   letter-spacing: -0.03125em;
+  cursor: pointer;
+  transition: background-color 200ms ease-in, color 200ms ease-in;
 }
 
-.switch-button.blue {
+.switch-button:hover {
+  background-color: #5454D4;
+  color: #fff;
+}
+
+.switch-button.left {
   border-radius: 10px 0px 0px 10px;
-  border-right: 5px solid #F7F7FB;
+}
+
+.switch-button.right {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.switch-button.selected {
   background-color: #5454D4;
   color: #fff;
 }
@@ -315,10 +339,15 @@ p {
   padding: 34px 0 27px;
   border-radius: 10px;
   background-color: #F8F8F8;
+  transition: transform 200ms ease-in, background-color 200ms ease-in, color 200ms ease-in;
 }
 
 .plan-box:last-child {
   margin-right: 0;
+}
+
+.transition-text {
+  transition: color 200ms ease-in;
 }
 
 .plan-box small {
@@ -367,22 +396,25 @@ p {
   letter-spacing: -0.03125em;
   text-align: center;
   color: #5454D4;
-  }
+  transition: color 200ms ease-in, background-color 200ms ease-in, opacity 200ms ease-in;
+}
 
-.plan-box.selected {
-  width: 376px;
-  height: 473px;
+.plan-button:hover {
+  opacity: 0.5;
+}
+
+.plan-box:hover {
+  transform: scale(1.05);
   background-color: #FF7143;
   color: #fff;
 }
 
-.plan-box.selected small,
-.plan-box.selected li,
-.plan-box.selected .plan-button {
+.plan-box:hover .transition-text,
+.plan-box:hover .plan-button {
   color: #fff;
 }
 
-.plan-box.selected .plan-button {
+.plan-box:hover .plan-button {
   width: 305px;
   background-color: #9F3919;
 }
